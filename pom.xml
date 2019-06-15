@@ -1,0 +1,111 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.atguigu</groupId>
+  <artifactId>ssm-crud</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+	<dependencies>
+	
+		<!-- scope为作用域限定属性 -->
+		<!-- 导入mybatis逆向工程jar包 -->
+		<dependency>
+		    <groupId>org.mybatis.generator</groupId>
+		    <artifactId>mybatis-generator-core</artifactId>
+		    <version>1.3.5</version>
+		</dependency>
+		<!-- 导入pagehelper分页插件jar包 -->
+		<dependency>
+	    	<groupId>com.github.pagehelper</groupId>
+		    <artifactId>pagehelper</artifactId>
+		    <version>5.0.0</version>
+		</dependency>
+		<!-- 导入json数据绑定jar包 -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.8.8</version>
+		</dependency>
+		<!-- 导入JSR303校验jar包 -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>5.4.1.Final</version>
+		</dependency>
+		<!-- 导入spring和springMVC的jar包 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webmvc</artifactId>
+		    <version>4.3.7.RELEASE</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>4.3.7.RELEASE</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aspects</artifactId>
+		    <version>4.3.7.RELEASE</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>4.3.7.RELEASE</version>
+		    <!-- <scope>test</scope> -->
+		</dependency>
+		<!-- 导入mybatis的jar包 -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>3.4.2</version>
+		</dependency>
+		<!-- 导入mybatis-spring整合jar包 -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>1.3.1</version>
+		</dependency>
+		<!-- 导入C3P0数据源的jar包 -->
+		<dependency>
+		    <groupId>c3p0</groupId>
+		    <artifactId>c3p0</artifactId>
+		    <version>0.9.1</version>
+		</dependency>
+		<!-- 导入mysql驱动jar包，新版本jar包驱动包路径更新为com.mysql.cj.jdbc.Driver -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.11</version>
+		</dependency>
+		<!-- 导入jstl标签库jar包 -->
+		<dependency>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		<!-- <dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>servlet-api</artifactId>
+		    <version>2.5</version>
+		    <scope>provided</scope>
+		</dependency> -->
+		<!-- 导入servlet的jar包，scope为provided意思是用tomcat容器排除此包用容器自带jar包，springTest需要3.0以上的包 -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.0.1</version>
+		    <scope>provided</scope>
+		</dependency>
+		<!-- 导入junit4测试jar包 -->
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>4.12</version>
+		    <!-- <scope>test</scope> -->
+		</dependency>
+		
+	</dependencies> 
+
+  
+</project>
